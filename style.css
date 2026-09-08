@@ -1,0 +1,731 @@
+body {
+      background-color: #f5f5f5;
+    }
+
+    /* Padding Kiri-Kanan 129px di layar Desktop/Laptop */
+    .custom-navbar {
+      background-color: transparent !important;
+      padding-left: 65px;
+      padding-right: 65px;
+    }
+
+    /* Styling Logo & Brand */
+    .navbar-brand-custom {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .brand-logo {
+      width: 45px;
+      height: 45px;
+      object-fit: contain;
+    }
+
+    .brand-text {
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 800;
+      color: #000000;
+    }
+
+    /* Tombol Toggle Titik Tiga (Mobile) */
+    .custom-toggler {
+      border: none;
+      background: transparent;
+      padding: 0;
+      font-size: 24px;
+      color: #000;
+    }
+
+    .custom-toggler:focus {
+      box-shadow: none;
+    }
+
+    /* Custom Tombol Menu Biru khas desain */
+    .btn-custom-blue {
+      background-color: #0052ff;
+      color: #fff;
+      border-radius: 6px;
+      border: none;
+      padding: 6px 20px;
+    }
+
+    .btn-custom-blue:hover,
+    .btn-custom-blue:focus {
+      background-color: #0043d4;
+      color: #fff;
+    }
+
+    /* Input Search khusus desktop & mobile */
+    .search-container {
+      position: relative;
+    }
+
+    .search-input {
+      background-color: #0052ff;
+      color: #fff;
+      border-radius: 6px;
+      border: none;
+      padding: 6px 15px;
+      padding-right: 35px;
+      width: 100%;
+    }
+
+    .search-input::placeholder {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .search-input:focus {
+      background-color: #0052ff;
+      color: #fff;
+      box-shadow: none;
+    }
+
+    .search-icon-btn {
+      background: transparent;
+      border: none;
+      color: #000;
+      font-size: 18px;
+    }
+
+    /* Penyesuaian Responsif untuk Mobile (Layar di bawah 992px) */
+    @media (max-width: 991.98px) {
+      .custom-navbar {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .navbar-collapse {
+        margin-top: 15px;
+      }
+
+      .mobile-menu-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .mobile-menu-container .btn,
+      .mobile-menu-container .search-input {
+        width: 100%;
+        text-align: center;
+      }
+
+      .brand-text {
+        font-size: 18px; /* Disesuaikan sedikit agar muat di layar HP keci/sedang */
+      }
+    }
+    
+    /* Hero Card dengan Background Image & Border Radius 20px */
+    .hero-card {
+      background-color: #ffffff;
+      border-radius: 20px;
+      padding: 122px 0px 200px 50px;
+      position: relative;
+      overflow: hidden;
+      
+      /* Gambar Gedung & Gelombang di Background */
+      background-image: 
+    linear-gradient(
+      to right, 
+      #ffffff 5%, 
+      rgba(255, 255, 255, 0.85) 55%, 
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url('banner.jpeg');
+      background-repeat: no-repeat;
+      background-position: bottom auto;
+      background-size: auto 100%;
+    }
+
+    /* Tipografi Hero */
+    .hero-title {
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 1.2;
+      color: #000000;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    .hero-subtitle {
+      font-size: 30px;
+      font-weight: 400;
+      color: #333333;
+      margin-bottom: 40px;
+    }
+
+    /* Label & Teks Produk (#0046FF, 16px, Bold) */
+    .product-label {
+      color: #0046FF;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    /* Box Ikon Produk */
+    .product-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .product-icon-box {
+      width: 48px;
+      height: 48px;
+      background-color: #0046FF;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 6px;
+    }
+
+    /* Ukuran Ikon Presisi 26px x 26px */
+    .product-icon-box i {
+      font-size: 26px;
+      width: 26px;
+      height: 26px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .product-name {
+      font-size: 12px;
+      color: #0046FF;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    /* Responsive adjustment untuk mobile */
+    @media (max-width: 991.98px) {
+      .hero-card {
+        padding: 100px 20px 120px;
+        background-size: auto 100%;
+        background-position: right bottom;
+      }
+
+      .hero-title, .hero-subtitle {
+        font-size: 22px;
+      }
+    }
+    
+    /* Container Card Putih About Us */
+    .about-card {
+      background-color: transpa;
+      border-radius: 20px;
+      padding: 0px 48px;
+    }
+
+    /* Heading: sans-serif 26px 700 bold */
+    .about-heading {
+      font-family: sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: #000000;
+      margin-bottom: 4px;
+    }
+
+    /* Subheading: 16px #666 Satoshi */
+    .about-subheading {
+      font-family: 'Satoshi', sans-serif;
+      font-size: 16px;
+      color: #666666;
+      font-weight: 400;
+      margin-bottom: 24px;
+    }
+
+    /* Deskripsi Teks: 16px #212121 Satoshi */
+    .about-text {
+      font-family: 'Satoshi', sans-serif;
+      font-size: 16px;
+      color: #212121;
+      line-height: 1.6;
+      font-weight: 400;
+      margin-bottom: 48px;
+    }
+
+    /* Section Statistik / Angka */
+    .stat-item {
+      font-family: 'Satoshi', sans-serif;
+    }
+
+    .stat-number {
+      font-size: 48px;
+      font-weight: 400;
+      color: #000000;
+      line-height: 1;
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+    }
+
+    .stat-unit {
+      font-size: 16px;
+      color: #333333;
+      font-weight: 400;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      color: #333333;
+      margin-top: 8px;
+      line-height: 1.3;
+    }
+
+    /* Responsive untuk Mobile */
+    @media (max-width: 991.98px) {
+      .about-card {
+        padding: 24px 16px;
+      }
+
+      .about-heading {
+        font-size: 22px;
+      }
+
+      .stat-number {
+        font-size: 36px;
+      }
+    }
+    
+    
+    /* Outer Card Wrapper */
+    .product-card {
+      background: transparent;
+      border: none;
+    }
+
+    /* Gambar Produk */
+    .product-img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    /* Kotak Biru Utama */
+    .blue-box {
+      background-color: #0046FF;
+      border-radius: 20px;
+      padding: 16px;
+      height: 420px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* Inner Header Box Putih (Bike, Toys, dll) */
+    .title-box {
+      background-color: #f5f5f5;
+      border-radius: 12px;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .title-text {
+      font-family: 'Satoshi', sans-serif;
+      font-size: 36px;
+      font-weight: 400;
+      color: #000000;
+      margin: 0;
+    }
+
+    /* Inner Description Box Putih */
+    .desc-box {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    .desc-text {
+      font-family: 'Satoshi', sans-serif;
+      font-size: 15px;
+      color: #212121;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* CSS Animasi Vertikal Khusus Mobile */
+    @media (max-width: 991.98px) {
+      .product-img, .blue-box {
+        height: auto;
+      }
+
+      .blue-box {
+        min-height: 320px;
+      }
+
+      /* Trik Carousel Slide Vertikal Ke Bawah */
+      .carousel-inner-vertical {
+        height: 680px; /* Adjust tinggi container mobile */
+        overflow: hidden;
+      }
+
+      .carousel-inner-vertical .carousel-item {
+        transition: transform 0.6s ease-in-out;
+      }
+
+      .carousel-inner-vertical .carousel-item-next.carousel-item-start,
+      .carousel-inner-vertical .carousel-item-prev.carousel-item-end {
+        transform: translateY(0);
+      }
+
+      .carousel-inner-vertical .carousel-item-next,
+      .carousel-inner-vertical .active.carousel-item-end {
+        transform: translateY(100%); /* Slide ke Bawah */
+      }
+
+      .carousel-inner-vertical .carousel-item-prev,
+      .carousel-inner-vertical .active.carousel-item-start {
+        transform: translateY(-100%);
+      }
+    }
+    
+        /* Container Utama Marquee */
+    .marquee-wrapper {
+      overflow: hidden;
+      width: 100%;
+      height: 500px;
+      position: relative;
+      background-image:url('maingallery.jpeg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding: 30px 0;
+      border-radius: 20px;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    /* Track/Jalur Gambar */
+    .marquee-track {
+      display: flex;
+      gap: 20px;
+      width: max-content;
+      
+      /* Menjalankan Animasi */
+      animation: scrollMarquee 25s linear infinite;
+    }
+
+    /* Efek Pause Saat Mouse Di-hover (Opsional) */
+    .marquee-wrapper:hover .marquee-track {
+      animation-play-state: paused;
+    }
+
+    /* Item Gambar Gallery */
+    .gallery-card {
+      width: 280px;
+      height: 200px;
+      border-radius: 16px;
+      overflow: hidden;
+      flex-shrink: 0; /* Agar gambar tidak menciut/gepeng */
+      position: relative;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .gallery-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-card:hover img {
+      transform: scale(1.05); /* Efek zoom tipis saat dihover */
+    }
+    /* Caption Teks dengan Drop Shadow (Tanpa Layer Gradasi) */
+.gallery-caption {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  right: 16px;
+  z-index: 2;
+  color: #ffffff;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  /* Efek Bayangan/Shadow pada Font */
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8),
+    0px 0px 8px rgba(0, 0, 0, 0.6);
+}
+
+    /* Keyframes Animasi Berjalan Dari Kanan Ke Kiri */
+    @keyframes scrollMarquee {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%); /* Bergerak sejauh 1/2 total lebar track (karena gambar diduplikasi) */
+      }
+    }
+
+    /* Responsive untuk Mobile */
+    @media (max-width: 768px) {
+      .gallery-card {
+        width: 200px;
+        height: 150px;
+      }
+      
+      .marquee-track {
+        gap: 12px;
+        animation-duration: 18s; /* Lebih cepat di layar HP */
+      }
+    }
+    
+    /* Subtitle / Badge "Why Choose us" */
+    .why-choose-title {
+      font-family: 'Satoshi', sans-serif;
+      font-size: 24px;
+      font-weight: 900;
+      color: #1E40AF;
+      margin-bottom: 8px;
+    }
+
+    /* Tagline Utama */
+    .why-choose-heading {
+      font-family: sans-serif;
+      font-size: 28px;
+      font-weight: 400;
+      color: #212121;
+      margin-bottom: 40px;
+    }
+
+    .why-choose-heading .highlight {
+      color: #1E40AF;
+    }
+
+    /* Card Fitur */
+    .feature-card {
+      background-color: #ffffff;
+      border-radius: 20px;
+      padding: 24px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+      height: 100%;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    /* Logo / Icon (#1E40AF) */
+    .feature-icon-box {
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .feature-icon-box i {
+      font-size: 36px;
+      color: #1E40AF;
+    }
+
+    /* Heading Card: sans-serif 16px 500 */
+    .feature-card-title {
+      font-family: sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      color: #000000;
+      margin-bottom: 6px;
+    }
+/* Caption Card: #0A0C0D, 12px, 400 */
+    .feature-card-desc {
+      font-family: 'Satoshi', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      color: #0A0C0D;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* Responsive adjustment */
+    @media (max-width: 768px) {
+      .feature-card {
+        padding: 16px;
+      }
+      .why-choose-heading {
+        font-size: 22px;
+      }
+    }
+    
+    /* Container Banner dengan Ukuran Pasti 1160x773 dan Border Radius 20px */
+.custom-banner-section {
+  width: 1160px;
+  height: 773px;
+  max-width: 100%;
+  /* Agar tetap responsif di layar kecil */
+  margin: 40px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.custom-banner-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Styling Footer Sederhana di Bawahnya */
+.site-footer {
+  max-width: 1160px;
+  margin: 0 auto 60px auto;
+  padding: 0 15px;
+}
+
+.footer-links h6 {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #0046FF;
+}
+
+/* Form Subscribe */
+.subscribe-title {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.subscribe-box {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 8px 8px 8px 16px;
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+}
+ .subscribe-box input {
+      border: none;
+      background: transparent;
+      outline: none;
+      width: 100%;
+      font-size: 14px;
+      color: #6c757d;
+    }
+
+    .subscribe-box button {
+      background-color: #0046FF;
+      border: none;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.2s;
+    }
+
+    .subscribe-box button:hover {
+      background-color: #0030cc;
+    }
+
+    /* Responsif untuk layar HP/Tablet */
+    @media (max-width: 1200px) {
+      .custom-banner-section {
+        height: auto;
+        aspect-ratio: 1160 / 773; /* Menjaga rasio gambar tetap proporsional */
+      }
+    }
+    
+    <!-- 1. Section Banner (1160x773px dengan border-radius 20px) -->
+  <div class="custom-banner-section">
+    <img src="https://images.unsplash.com/photo-1543332164-6e82f355badc?q=80&w=1160&h=773&fit=crop" alt="Banner Anak & Sepeda">
+  </div>
+
+  <!-- 2. Section Footer / Navigasi Bawah -->
+  <footer class="site-footer">
+    <div class="row g-4 align-items-start">
+      
+      <!-- Kolom Home -->
+      <div class="col-6 col-md-2 footer-links">
+        <h6>Home</h6>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Brand</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom Product -->
+      <div class="col-6 col-md-3 footer-links">
+        <h6>Product</h6>
+        <ul>
+          <li><a href="#">Bicycle</a></li>
+          <li><a href="#">Kids Bike</a></li>
+          <li><a href="#">Battery Toys</a></li>
+          <li><a href="#">Non Battery</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom Contact -->
+      <div class="col-6 col-md-3 footer-links">
+        <h6>Contact</h6>
+        <ul>
+          <li><a href="#">Linkedin</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Whatsapp</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom Blog -->
+      <div class="col-6 col-md-2 footer-links">
+        <h6>Blog</h6>
+        <ul>
+          <li><a href="#">Location</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom Subscribe (Desktop: Pindah ke kanan) -->
+      <div class="col-12 col-md-4 mt-4 mt-md-0">
+        <p class="subscribe-title">Subscribe to be in touch with latest updates</p>
+        <div class="subscribe-box">
+          <input type="email" placeholder="Email address">
+          <button type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
